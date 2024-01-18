@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@400;600&family=Oswald:wght@300&family=Poppins:wght@300;400;500;600;700&family=Prompt&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  border-radius: 5px;
+}
+
+:root {
+  --cor-btn: #f06161;
+}
+
+#container-header-main {
+  width: 100%;
+  min-height: 600px;
+  background-image: url(../images/header.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#close-menu,
+#icon-menu-mobile {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#btnNav {
+  margin-top: -5px;
+}
+
+/* Estilo dos botões do projeto em geral */
+.btngeneral {
+  background-color: var(--cor-btn);
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  border: 2px solid var(--cor-btn);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btngeneral:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* MAIN */
+
+.main {
+  padding: 20px 50px;
+}
+
+.main h1 {
+  color: #fff;
+}
+
+.btnMain {
+  margin-top: 25px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 245px;
+  padding: 5px 25px;
+}
+
+.col-1 a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.col-2 {
+  display: flex;
+  align-items: center;
+}
+.col-2 h6 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.col-2 i {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+}
+
+.form-content {
+  width: 800px;
+}
+
+.grupo-1 input {
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #ccc;
+}
+.grupo-2 textarea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+}
+.grupo-2 input {
+  width: 80%;
+  margin-top: 10px;
+}
+
+/* SEGUNDO-CONTEÚDO: */
+
+#content-two {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#content-two h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#content-two .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.articles img {
+  width: 550px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.articles img:hover {
+  transform: scaleX(1.1);
+}
+
+/* TERCEIRO CONTEÚDO:  */
+
+#Our-Products {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#Our-Products h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.articles-two img {
+  width: 550px;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.articles-two img:hover {
+  transform: scaleX(1.1);
+}
+
+.Our-Section {
+  display: flex;
+  justify-content: center;
+}
+
+.articles-two-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* FOOTER: */
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f06161;
+}
+
+.footer-end p {
+  color: #fff;
+}
+
+.footer-end .icons-footer i {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  margin-left: 95%;
+  font-size: 80px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE: */
+
+@media screen and (max-width: 1250px) {
+  #modal,
+  #closeModal,
+  #modalImg {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  #icon-menu-mobile {
+    display: block;
+    font-size: 2.5em;
+    color: #ccc;
+    z-index: 1;
+  }
+
+  #close-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 35px;
+    color: var(--cor-btn);
+  }
+
+  nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    transform: translateX(100%);
+    padding: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav.active {
+    transform: translateX(0%);
+  }
+
+  nav ul {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #000;
+  }
+
+  #container-header-main {
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+  }
+
+  .main {
+    text-align: center;
+    padding: 20px;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .col-1,
+  .col-2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .grupo-1 input,
+  .grupo-2 input,
+  .grupo-2 textarea {
+    width: 100%;
+  }
+
+  #content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-content {
+    width: 100%;
+  }
+
+  #content-two .section {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  #content-two h3 {
+    font-size: 30px;
+  }
+
+  .articles img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #Our-Products h3 {
+    font-size: 30px;
+  }
+
+  .Our-Section {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles-two img {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .articles-two-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-end {
+    flex-direction: column;
+    align-items: center;
+  }
+}
