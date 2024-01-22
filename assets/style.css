@@ -266,9 +266,9 @@ nav a {
 /* RESPONSIVIDADE: */
 
 @media screen and (max-width: 1250px) {
-  #modal,
-  #closeModal,
-  #modalImg {
+  .modal,
+  .close,
+  .modal img {
     display: none;
   }
 
